@@ -21,9 +21,9 @@ const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 for (var i = 0; i < 500; i++) {
 
   downloadFromUrlAutomatically(document.querySelector("#pagepict").getAttribute("src"), `image${i}.png`)
-  await _sleep(8000);
+  await _sleep(10000);
     
   gotoNextPageAction();
-  await _sleep(8000);
+  await _sleep(10000);
   
 }
